@@ -69,7 +69,7 @@ hr {
   /* 이미지 크기 조정 */
   .paper-row img, 
   .paper-row video {
-    width: 80% !important; /* 모바일에서 이미지 꽉 차게 (너무 크면 80% 정도로 조절) */
+    width: 70% !important; /* 모바일에서 이미지 꽉 차게 (너무 크면 80% 정도로 조절) */
     max-width: 300px; /* 너무 커지지 않게 제한 */
     margin: 0 auto; /* 가운데 정렬 */
   }
