@@ -55,3 +55,28 @@ hr {
   color: #888888;
 }
 .footer-credit a { font-size: 11px; }
+
+/* --- 모바일 반응형 설정 (맨 아래에 추가) --- */
+@media screen and (max-width: 768px) {
+  /* 표의 칸(Cell)을 블록으로 바꿔서 위아래로 쌓이게 함 */
+  .paper-row td {
+    display: block !important;
+    width: 100% !important;
+    padding: 10px 0 !important; /* 위아래 간격 조정 */
+    text-align: center; /* 모바일에서는 이미지 가운데 정렬 */
+  }
+
+  /* 이미지 크기 조정 */
+  .paper-row img, 
+  .paper-row video {
+    width: 80% !important; /* 모바일에서 이미지 꽉 차게 (너무 크면 80% 정도로 조절) */
+    max-width: 300px; /* 너무 커지지 않게 제한 */
+    margin: 0 auto; /* 가운데 정렬 */
+  }
+
+  /* 텍스트 정렬 다시 왼쪽으로 (이미지 밑 설명) */
+  .paper-row td:last-child {
+    text-align: left;
+  }
+}
+
